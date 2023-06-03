@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="ass2()">Ass2</button><br>
+    <button onClick="ass3()">Ass3</button><br>
+    <button onClick="ass4()">Ass4</button><br>
+    <button onClick="ass5()">Ass5</button><br>
+    <button onClick="ass6()">Ass6</button><br>
+    <div id="element"></div>
+
+    <script>
+        function ass2(){
+    console.log("Assignment2");
+    var num1 =+ prompt("Enter First Number")
+    var num2 =+ prompt("Enter Second Number")
+    var num3 =+ prompt("Enter Third Number")
+    var num4 =+ prompt("Enter Fourth Number")
+    var num5 =+ prompt("Enter Fifth Number")
+    var numbers = Math.max(num1,num2,num3,num4,num5)
+  console.log(numbers);
+}
+function ass3(){
+console.log("assignment3")
+for (var i = 0; i < 16; i++)
+    if (i % 2 === 0) {
+      console.log(i + "is even");
+    } else {
+      console.log(i + "is Odd");
+    }
+}
+function ass4(){
+    console.log("Assignment 4");
+    for (var i=0; i<101; i++)
+    if(i%3===0){
+    console.log("Fizz");
+}
+else if (i%5===0){
+    console.log("Buzz");
+}
+else if(i%3===0 && i%5===0){
+    console.log("FIzzBuzz")
+}
+else {
+    console.log(i);
+}
+}
+var elementVal = document.getElementById("element");
+
+function ass5() {
+  var br = "";
+  for (var i = 5; i > 0 ; i--) {
+    for (var j = 0; j < i ;j++) {
+      br += "*";
+    }
+    br += "<br/>";
+  }
+  elementVal.innerHTML = br;
+}
+function ass6(){
+    console.log("Assignment 4");
+    for (var i=0; i<101; i++)
+    if(i%3===0){
+    console.log("Multiple of 3");
+}
+else if (i%5===0){
+    console.log("Multiple of 5");
+}
+
+else {
+    console.log(i);
+}
+}
+    </script>
+</body>
+</html>
